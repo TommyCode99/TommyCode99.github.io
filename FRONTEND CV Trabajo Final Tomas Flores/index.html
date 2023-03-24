@@ -31,13 +31,13 @@
                   </li>
                 </ul>
                 <span id="telefono" class="navbar-text float-end text-white">Tel: 341 142 1321&emsp;</span>
-                <button id="botonDarkMode" type="button" class="btn btn-light">Dark mode</button>
+                <button id="botonDarkMode" type="button" class="btn bg-dark-subtle">Dark mode</button>
               </div>
             </div>
           </nav>
     </div>
     <div class="row m-3 justify-content-around">
-        <div class="col-sm-4 col-md-3 col-lg-3 bg-dark-subtle">
+        <div id= "columnas" class="col-sm-4 col-md-3 col-lg-3 bg-dark-subtle">
             <div class="card">
                 <img src="pictures/CVPic.jpg" class="card-img-top" alt="Foto Alumno">
                 <div class="card-body">
@@ -58,31 +58,35 @@
                 </div>
               </div>
         </div>
-        <div class="p-3 col-sm-8 col-md 9 col-lg-9 bg-secondary-subtle">
-            <h2 class="text-info-emphasis fw-bold p-1" id="Conocimientos">Conocimientos y Educación:</h2>
-              <h5 class="fst-italic">Estudios secundarios completos.</h5>
+        <div id="cuerpo" class="p-3 col-sm-8 col-md 9 col-lg-9 bg-secondary-subtle">
+            <h2 id="Conocimientos" class="text-info-emphasis fw-bold p-1">Conocimientos y Educación:</h2>
+            <section id="seccion1">
+              <h5 id="encabezado1" class="fst-italic">Estudios secundarios completos.</h5>
                 <p>Estudios finalizados con bachiller con orientación en administración de empresas.<br>
                 Instituto Secundario Dr. Bernardo Houssay, Córdoba</p>
-              <h5 class="fst-italic">Estudios universitarios incompletos.</h5>
+              <h5 id="encabezado2" class="fst-italic">Estudios universitarios incompletos.</h5>
                 <p>Ingeniería en computación.<br>
                 Facultad de Ciencias Exactas físicas y Naturales, Córdoba.</p>
-              <h5 class="fst-italic">Primeros pasos en desarollo Frontend.</h5>
+              <h5 id="encabezado3" class="fst-italic">Primeros pasos en desarollo Frontend.</h5>
                 <p>Ticmas Academy<br>
                 Argentina Programa 4.0.</p>
                 <p>&emsp;</p>
-            <h2 class="text-info-emphasis fw-bold p-1" id="Experiencia">Experiencia Laboral:</h2>
-              <h6 class="fw-bold">Almacén "Punto Amigo."</h6>
+            </section>
+            <h2 id="Experiencia" class="text-info-emphasis fw-bold p-1">Experiencia Laboral:</h2>
+              <section id="seccion2">
+              <h6 id="encabezadoBold1" class="fw-bold">Almacén "Punto Amigo."</h6>
                 <p class="fst-italic">Enero 2022 - Enero 2023. Comercio Alto Alberdi, Córdoba</p>
                 <p>Realizando manejo de caja, atención al cliente, encargado de compras a proveedores, control y reposición de mercadería, orden y limpieza de local, entre otras tareas.</p>
-              <h6 class="fw-bold">PAICor Córdoba.</h6>
+              <h6 id="encabezadoBold2" class="fw-bold">PAICor Córdoba.</h6>
                 <p class="fst-italic">Agosto 2021 - Noviembre 2021. Programa de asistencia Integral Córdoba.</p>
                 <p>Realizando tareas de Armado, Logística y control de módulos alimentarios.</p>
-              <h6 class="fw-bold">Franquicia "Del Pilar".</h6>
+              <h6 id="encabezadoBold3" class="fw-bold">Franquicia "Del Pilar".</h6>
                 <p class="fst-italic">Mayo 2021 - Julio 2021. Sede Hiper Liberad General Paz, Córdoba.</p>
                 <p>Realizando tareas de camarero, preparando y acondicionando mesas, atendiendo a clientes, tomando y sirviendo comandas, limpieza de mesas y de la franquicia, entre otras tareas.</p>
-               <h6 class="fw-bold">CleanClap.</h6>
+              <h6 id="encabezadoBold4" class="fw-bold">CleanClap.</h6>
                 <p class="fst-italic">Agosto de 2017 - Septiembre 2018. Comercio de productos de limpieza, Córdoba.</p>
                 <p>Manejo de productos químicos, atención al cliente, control y reposición de productos, orden y limpieza de comercio, entre otras tareas</p>
+              </section>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
