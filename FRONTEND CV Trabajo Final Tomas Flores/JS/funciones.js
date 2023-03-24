@@ -1,4 +1,19 @@
 let BS;
+document.getElementById('botonDarkMode').addEventListener('mouseover',function(){
+    if(BS != 0) {
+        document.getElementById('botonDarkMode').setAttribute('class','btn bg-body-secondary');
+    } else {
+        document.getElementById('botonDarkMode').setAttribute('class','btn bg-info-subtle');
+    }
+})
+document.getElementById('botonDarkMode').addEventListener('mouseout',function(){
+    if(BS != 0) {
+        document.getElementById('botonDarkMode').setAttribute('class','btn bg-dark-subtle');
+    } else {
+        document.getElementById('botonDarkMode').setAttribute('class','btn bg-light');
+    }
+})
+
 document.getElementById('botonDarkMode').addEventListener('click',function(){
     if (BS != 0) {
         document.body.style.backgroundColor= '#15202B';
@@ -25,5 +40,18 @@ document.getElementById('botonDarkMode').addEventListener('click',function(){
         document.getElementById('seccion2').setAttribute('class','');
         BS = 1;
     }
+})
+document.getElementById('direccion1').addEventListener('mouseover',function(){
+    document.getElementById('direccion1').setAttribute('class','nav-link active text-secondary-emphasis');
+})
+document.getElementById('direccion1').addEventListener('mouseout',function(){
+    document.getElementById('direccion1').setAttribute('class','nav-link active text-white');
+})
+
+document.getElementById('direccion2').addEventListener('mouseover',function(){
+    document.getElementById('direccion2').setAttribute('class','nav-link active text-secondary-emphasis');
+})
+document.getElementById('direccion2').addEventListener('mouseout',function(){
+    document.getElementById('direccion2').setAttribute('class','nav-link active text-white');
 })
 
