@@ -1,3 +1,6 @@
+//Acá definí la variable BS para el boton de Dark mode y la funcion para que el boton cambie de
+//color cuando tiene el cursor por encima, pero por algun motivo no puedo hacer que funcione
+// correctamente en una pantalla tactil
 let BS;
 document.getElementById('botonDarkMode').addEventListener('mouseover',function(){
     if(BS != 0) {
@@ -14,6 +17,7 @@ document.getElementById('botonDarkMode').addEventListener('mouseout',function(){
     }
 })
 
+//Esta es la funcion del botón DarkMode
 document.getElementById('botonDarkMode').addEventListener('click',function(){
     if (BS != 0) {
         document.body.style.backgroundColor= '#15202B';
@@ -40,6 +44,8 @@ document.getElementById('botonDarkMode').addEventListener('click',function(){
         document.getElementById('seccion2').setAttribute('class','');
         BS = 1;
     }
+// Esta sección es para darle la función de cambio de apariencia a los "botones" 
+// que te manejan a las distintas secciones de la pagina
 })
 document.getElementById('direccion1').addEventListener('mouseover',function(){
     document.getElementById('direccion1').setAttribute('class','nav-link active text-secondary-emphasis');
